@@ -166,12 +166,30 @@ button:hover {
 
     h1 {
         font-size: 40px;
-        max-width: 450px;
+        max-width: 4000px;
         padding-top: 20px;
     }
 
     p {
+        font-size: 18px;
         padding-right: 25px;
       }
 }
 
+@media screen and (min-width: 1440px) {
+    h1 {
+        width: 100%; 
+        font-size: 50px;
+        padding-top: 0px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 13px 35px;
+        width: 30%
+    }
+}
