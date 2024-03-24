@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 33px auto 20px;
+    width: 80%;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.logo-image {
+    width: 130px;
+    float: left;
+    margin-bottom: 60px;
+}
+
+.main-image {
+    width: 100%;
+
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+p {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+button {
+    color: hsl(257, 40%, 49%);
+    width: 70%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: 2px 3px 5px rgb(87, 38, 127);
+    margin: 10px 0 50px;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+
+.fa-brands {
+    font-size: 12px;
+    border: 1.5px solid white;
+    border-radius: 50%; 
+    padding: 10px;
+    margin: 0 4px 10px;
+}
+
+.fa-facebook-f {
+    padding: 10px 13px;
+}
+
+.fa-instagram {
+    padding: 10px 12px;
+}
+
+.fa-brands:hover {
+    border: 1.5px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width: 580px) {
+
+    body {
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+}
+@media screen and (min-width: 890px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        width: 90%;
+        background-size: cover;
+        min-height: 100vh;
+        overflow-y: hidden;
+    }
+
+    html {
+        border: 1px solid black;
+    }
+
+    .logo-image {
+        width: 180px;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-item {
+       /* flex: 1 1 0;  short hand property*/
+        flex-grow: 1; 
+        flex-shrink: 1;
+        flex-basis: 0;
+        width: 0;
+    }
+
+    .text {
+        align-self: baseline;
+        text-align: left;
+        margin-left: 60px;
+    }
+
+    h1 {
+        font-size: 30px;
+        max-width: 350px;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+
+    button {
+        width: 170px;
+        font-size: 16px;
+        padding: 12px 12px;
+    }
+
+    .container-for-social-media-icons {
+        position: fixed;
+        right: 70px;
+        bottom: 30px;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+
+    .fa-facebook-f {
+        padding: 10px 14.5px;
+    }
+
+    .fa-instagram {
+        padding: 10px 12px;
+    }
+}
+
+@media screen and (min-width: 1165px) {
+
+    h1 {
+        font-size: 40px;
+        max-width: 450px;
+        padding-top: 20px;
+    }
+
+    p {
+        padding-right: 25px;
+      }
+}
+
